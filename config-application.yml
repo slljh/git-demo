@@ -1,4 +1,4 @@
-    spring:
+spring:
   profiles:
     active:
     - dev
@@ -10,7 +10,7 @@ spring:
   application:
     name: config-client
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://localhost:10086/eureka,http://localhost:10010/eureka,http://localhost:10001/eureka
 ---
@@ -21,6 +21,6 @@ spring:
   application:
     name: config-client
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://localhost:10086/eureka,http://localhost:10010/eureka,http://localhost:10001/eureka
