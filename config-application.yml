@@ -1,0 +1,26 @@
+    spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8888
+spring:
+  profiles: dev
+  application:
+    name: config-client
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://localhost:10086/eureka,http://localhost:10010/eureka,http://localhost:10001/eureka
+---
+server:
+  port: 9999
+spring:
+  profiles: test
+  application:
+    name: config-client
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://localhost:10086/eureka,http://localhost:10010/eureka,http://localhost:10001/eureka
